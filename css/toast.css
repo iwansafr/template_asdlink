@@ -1,0 +1,164 @@
+#toast {
+  visibility: hidden;
+  width: 350px;
+  margin-left: -125px;
+  background-color:#00aa20;
+  color: #fff;
+  text-align: center;
+  border-radius: 2px;
+  padding: 10px;
+  position: fixed;
+  z-index: 1;
+  left: 45%;
+  bottom: 30px;
+  font-size: 13px;
+  font-family: 'Open Sans';
+}
+#toastbooking {
+  visibility: hidden;
+  width: 100%;
+  margin-left: -55px;
+  background-color:#00aa20;
+  color: #fff;
+  text-align: center;
+  border-radius: 2px;
+  padding: 10px;
+  position: fixed;
+  z-index: 1;
+  left: 35%;
+  bottom: 30px;
+  font-size: 13px;
+  font-family: 'Open Sans';
+}
+#toastbooking-content {
+  display: block;
+  float: left;
+  max-width: 300px;
+  margin-top:0px;
+  text-align:left;
+}
+#toast-content {
+  margin-top:10px;
+  padding: 10px;
+}
+#toast-close {
+      display:none;
+}
+#toastbooking-close {
+      cursor: pointer;
+      margin-top:0px;
+      padding-right:0px;
+      font-weight:bold;
+      float:right;
+}
+
+#toast.show {
+  visibility: visible;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 8s;
+  animation: fadein 0.5s, fadeout 0.5s 8s;
+}
+#toastbooking.showbooking {
+  float: left;
+  max-width: 400px;
+  word-wrap: break-word;
+  visibility: visible;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 8s;
+  animation: fadein 0.5s, fadeout 0.5s 8s;
+}
+
+@-webkit-keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+  from {bottom: 30px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+  from {bottom: 30px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+}
+
+
+
+
+@media (max-width: 600px) {
+#toast {
+  font-size: 14px;
+  background-color:#00aa20;
+  left: 0%;
+  margin-left:0px;
+  width:100%;
+  bottom:0px;
+  height: 25px;
+  text-align:left;
+}
+#toastbooking {
+  font-size: 14px;
+  background-color:#00aa20;
+  left: 0%;
+  margin-left:0px;
+  width:100%;
+  bottom:0px;
+  height: auto;
+  text-align:left;
+}
+#toast-content {
+  width: 350px;
+  margin-top:-10px;
+}
+#toastbooking-content {
+  display: block;
+  float: left;
+  max-width: 300px;
+  margin-top:0px;
+}
+#toast.show {
+  width: 100%;
+  visibility: visible;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 8s;
+  animation: fadein 0.5s, fadeout 0.5s 8s;
+}
+#toastbooking.showbooking {
+  width: 100%;
+  visibility: visible;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 8s;
+  animation: fadein 0.5s, fadeout 0.5s 8s;
+}
+#toast-close {
+      display:block;
+      float:right;
+      padding-right:30px;
+      font-weight:bold;
+}
+#toastbooking-close {
+      float:right;
+      padding-right:15px;
+      font-weight:bold;
+}
+@-webkit-keyframes fadein {
+  from {bottom: -20px; opacity: 0;}
+  to {bottom: 0px; opacity: 1;}
+}
+
+@keyframes fadein {
+  from {bottom: -20px; opacity: 0;}
+  to {bottom: 0px; opacity: 1;}
+}
+@-webkit-keyframes fadeout {
+  from {bottom: 0px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+  from {bottom: 0px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+}
+}
